@@ -1,0 +1,172 @@
+body{
+  background-image: url("../images/minimal.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+
+}
+h1{
+  font-family: 'Cedarville Cursive', cursive;
+  text-align: center;
+  font-size: 60px;
+ 
+}
+
+.header{
+  position: relative;
+  margin: 0 auto;
+  margin-top: 5%;
+
+  
+}
+
+.slideshow-container {
+  max-width: 1600px;
+  position: relative;
+  margin: 0 auto;
+
+
+}
+
+.Animation{
+  position: absolute;
+  width:16% ;
+  height:26%;
+  top: 45.5%;
+  left:50.75%;
+  z-index: 0;
+  /*NAME MUST MATCH WHAT'S NEXT TO KEYFRAMES*/
+  animation-name: color-change;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+  @keyframes color-change{
+  0%{background-color: red;}
+  25%{background-color: yellow;}
+  50%{background-color: yellow;}
+  75%{background-color: green;}
+  100%{background-color: blue;}
+}
+
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+
+}
+
+.Slide-1{
+  position: absolute;
+  width:19%;
+  height:25%;
+  top: 46%;
+  left: 67%;
+  z-index: 1;
+
+  
+}
+
+.Slide-2{
+  position: absolute;
+  width:35% ;
+  height:45%;
+  top: 0px;
+  left: 51%;
+}
+
+.Slide-3{
+  position: absolute;
+  width:15.5% ;
+  height:25%;
+  top: 46%;
+  left:51%;
+  z-index: 1000;
+ 
+}
+
+.Slide-4{
+ position: absolute;
+  width:35% ;
+  height:28%;
+  bottom: 0px;
+  left: 51%; 
+
+}
+
+.Slide-5{
+  width: 45%;
+  height: 45%;
+  margin-left: 5%;
+
+  
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.dots {
+  text-align: center;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  bottom: 0;
+  /*transition: background-color 0.6s ease;*/
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
